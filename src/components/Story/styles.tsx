@@ -5,8 +5,11 @@ const styles = StyleSheet.create({
     borderColor: 'red',
   },
   name: {
+    height: 20,
     textAlign: 'center',
     paddingBottom: 10,
+    maxWidth: 70,
+    overflow: 'hidden',
   },
 });
 
