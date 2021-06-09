@@ -15,6 +15,6 @@ const Story: React.FC<Props> = ({imageUri, name}) => {
       <Text style={styles.name}>{name}</Text>
     </View>
   );
-}
+};
 
 export default Story;
