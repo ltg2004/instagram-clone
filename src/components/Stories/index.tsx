@@ -3,13 +3,9 @@ import {FlatList} from 'react-native';
 import Story from '../Story';
 import axios from 'axios';
 
-type StoriesData = {
-  imageUri: string;
-  name: string;
-};
-// let storyData: StoriesData[] = [];
-const Stories = () => {
+const Stories: React.FC<{}> = () => {
   const [items, setItems] = useState([]);
+
   useEffect(() => {
     let mounted = true;
     axios.get('http://localhost:3000/stories').then(res => {
